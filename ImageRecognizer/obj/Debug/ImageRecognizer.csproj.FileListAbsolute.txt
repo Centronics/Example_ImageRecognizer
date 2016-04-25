@@ -1,0 +1,1 @@
+D:\разработки\Средства разработки ДИС\Примеры\ImageRecognizer\Исходный код\ImageRecognizer\ImageRecognizer\bin\Debug\ImageRecognizer.exe.config
