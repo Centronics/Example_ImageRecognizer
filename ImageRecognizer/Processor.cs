@@ -52,7 +52,7 @@ namespace ImageRecognizer
             /// <summary>
             /// Список знаков разобранного фрагмента, относящегося к третьему изображению.
             /// </summary>
-            public List<SignValue> img3;
+            public List<SignValue> Img3;
 
             /// <summary>
             /// Находит наиболее подходящие друг к другу изображения, сравнивая знаки, содержащиеся в списках, и вычисляя, какое изображение соответствует более всего,
@@ -67,7 +67,7 @@ namespace ImageRecognizer
             public byte GetBySign(List<SignValue> lst1, List<SignValue> lst2, List<SignValue> lst3, out int count)
             {
                 count = 0;
-                if (Img1 == null && Img2 == null && img3 == null)
+                if (Img1 == null && Img2 == null && Img3 == null)
                     return 0;
                 int i1 = 0, i2 = 0, i3 = 0;
                 for (int k = 0; k < Map.AllMax; k++)
@@ -77,8 +77,8 @@ namespace ImageRecognizer
                         sv1 = Img1[k] - lst1[k];
                     if (Img2 != null)
                         sv2 = Img2[k] - lst2[k];
-                    if (img3 != null)
-                        sv3 = img3[k] - lst3[3];
+                    if (Img3 != null)
+                        sv3 = Img3[k] - lst3[3];
                     if (sv1 < sv2 && sv1 < sv3)
                     {
                         i1++;
@@ -284,7 +284,7 @@ namespace ImageRecognizer
                     Py3 = py3,
                     Img1 = (sv1.Count > 0) ? sv1 : null,
                     Img2 = (sv2.Count > 0) ? sv2 : null,
-                    img3 = (sv3.Count > 0) ? sv3 : null
+                    Img3 = (sv3.Count > 0) ? sv3 : null
                 };
                 lst.Add(images);
             }

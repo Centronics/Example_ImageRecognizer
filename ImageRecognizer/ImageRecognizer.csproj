@@ -35,9 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DynamicProcessor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\DynamicProcessorLib\Библиотека\DynamicProcessor.dll</HintPath>
+    <Reference Include="DynamicProcessor">
+      <HintPath>..\..\..\Программы\Системы программирования\ДИС\DynamicProcessorLib\Библиотека\DynamicProcessor.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
